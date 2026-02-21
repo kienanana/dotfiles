@@ -51,12 +51,9 @@ tmux
 ```
 
 2.  Install TPM plugins:
-
-```{=html}
-<!-- -->
+``` bash
+prefix + I
 ```
-    prefix + I
-
 (prefix: ctrl + a)
 
 TPM will automatically clone and install:
@@ -99,5 +96,3 @@ Example in `.zshrc`:
 ``` bash
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 ```
-
-------------------------------------------------------------------------
