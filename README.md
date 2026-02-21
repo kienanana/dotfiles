@@ -80,19 +80,3 @@ After this step, tmux will match the original environment.
     ├── .tmux.conf
     ├── .zshrc
     └── bootstrap.sh
-
-------------------------------------------------------------------------
-
-## 🔐 Local overrides
-
-Machine-specific or secret configuration should go into files like:
-
--   `~/.zshrc.local` (recommended)
-
-These are ignored by git.
-
-Example in `.zshrc`:
-
-``` bash
-[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
-```
