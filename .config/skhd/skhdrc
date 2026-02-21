@@ -8,8 +8,9 @@ fn - i : open -a 'iTerm'
 fn - d : open -a 'TablePlus'
 fn - g : open -a 'ChatGPT'
 fn - a : open -a 'Claude'
-fn - v : open -a 'AWS VPN Client'
+fn - v : open -a 'Visual Studio Code'
 fn - f : open -a 'Figma'
+fn - z : open -a 'Zen'
 
 # --- Changing Focus ---
 # change window focus within space

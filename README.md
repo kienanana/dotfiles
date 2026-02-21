@@ -65,3 +65,10 @@ TPM will automatically clone and install:
 -   etc.
 
 After this step, tmux will match the original environment.
+
+------------------------------------------------------------------------
+
+## skhd reload
+``` bash
+launchctl kickstart -k gui/$(id -u)/com.koekeishiya.skhd
+```
