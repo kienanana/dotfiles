@@ -13,6 +13,7 @@ this repository manages my shell, editor, terminal, and window manager setup usi
 -   yabai
 -   skhd
 -   starship
+-   sketchybar
 
 ------------------------------------------------------------------------
 
@@ -64,19 +65,3 @@ TPM will automatically clone and install:
 -   etc.
 
 After this step, tmux will match the original environment.
-
-------------------------------------------------------------------------
-
-## structure
-
-    ~/.dotfiles
-    ├── .config/
-    │   ├── nvim/
-    │   ├── ghostty/
-    │   ├── yabai/
-    │   ├── skhd/
-    │   └── starship.toml
-    ├── .tmux/
-    ├── .tmux.conf
-    ├── .zshrc
-    └── bootstrap.sh
