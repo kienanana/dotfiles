@@ -1,0 +1,16 @@
+# Quick terminal
+keybind = global:cmd+escape=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-screen = mouse
+quick-terminal-animation-duration = 0
+quick-terminal-autohide = false
+quick-terminal-size = 1000px,700px
+# Visuals
+background-blur = true
+background-opacity = 0.92
+# cursor-opacity = 0.35
+# unfocused-split-opacity = 0.8
+background-blur-radius = 20
+# unfocused-split-fill = #000000
+# background-opacity-cells = true
+theme = 0x96f

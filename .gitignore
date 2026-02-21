@@ -1,0 +1,17 @@
+.DS_Store
+
+# Never commit secrets
+*.env
+*.key
+*.pem
+*.p12
+*.secret
+*token*
+*secrets*
+
+# Local overrides
+*.local
+*.local.*
+
+# tmux plugins (managed by TPM)
+.tmux/plugins/
