@@ -1,13 +1,10 @@
 # dotfiles
 
-Personal macOS development environment configuration.
-
-This repository manages my shell, editor, terminal, and window manager
-setup using symlinks for portability across machines.
+this repository manages my shell, editor, terminal, and window manager setup using symlinks for portability across machines.
 
 ------------------------------------------------------------------------
 
-## ✨ Stack
+## stack
 
 -   zsh
 -   neovim
@@ -19,7 +16,7 @@ setup using symlinks for portability across machines.
 
 ------------------------------------------------------------------------
 
-## 🚀 Quick setup (new machine)
+## quick setup (new machine)
 
 ### 1. Clone
 
@@ -41,7 +38,7 @@ This will:
 
 ------------------------------------------------------------------------
 
-## 🔌 tmux setup on new devices (IMPORTANT)
+## tmux setup on new devices 
 
 Tmux plugins are **not stored in this repo**. They are managed by TPM.
 
@@ -60,7 +57,7 @@ tmux
 ```
     prefix + I
 
-(Default prefix is `Ctrl-b` unless changed.)
+(prefix: ctrl + a)
 
 TPM will automatically clone and install:
 
@@ -73,7 +70,7 @@ After this step, tmux will match the original environment.
 
 ------------------------------------------------------------------------
 
-## 🧠 Structure
+## structure
 
     ~/.dotfiles
     ├── .config/
@@ -104,22 +101,3 @@ Example in `.zshrc`:
 ```
 
 ------------------------------------------------------------------------
-
-## 🛠 Maintenance
-
-Update dotfiles:
-
-``` bash
-cd ~/.dotfiles
-git add -A
-git commit -m "update"
-git push
-```
-
-------------------------------------------------------------------------
-
-## 📌 Notes
-
--   macOS-first setup\
--   tested with Homebrew toolchain\
--   tmux plugins managed via TPM
