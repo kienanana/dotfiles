@@ -10,7 +10,7 @@ return {
             keywordStyle = { italic = true },
             statementStyle = { bold = true },
             typeStyle = {},
-            transparent = true,  -- Changed to true!
+            transparent = true,
             dimInactive = false,
             terminalColors = true,
             colors = {
@@ -18,15 +18,17 @@ return {
                 theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
             },
             overrides = function(colors)
+                local theme = colors.theme
                 return {
-                    -- Keep your custom cursor line number color
-                    CursorLineNr = { fg = "#00cc66", bold = true },
-                    -- Make these transparent too
+                    -- Transparency
                     Normal = { bg = "none" },
                     NormalFloat = { bg = "none" },
                     NormalNC = { bg = "none" },
                     SignColumn = { bg = "none" },
                     LineNr = { bg = "none" },
+                    
+                    -- Custom cursor line number - set both fg and bg explicitly
+                    CursorLineNr = { fg = "#00cc66", bg = "none", bold = true },
                 }
             end,
             theme = "wave",
@@ -37,5 +39,8 @@ return {
         })
         
         vim.cmd("colorscheme kanagawa")
+        
+        -- Force the highlight after colorscheme loads
+        vim.cmd([[highlight CursorLineNr guifg=#00cc66 guibg=none gui=bold]])
     end,
 }

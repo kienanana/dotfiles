@@ -1,5 +1,7 @@
 require("kienanana")
 
+vim.opt.cursorline = true
+
 -- local palette = {
 --   bright = "#f9e2af", -- general high-contrast UI color
 --   cursor = "#00cc66", -- current line number
