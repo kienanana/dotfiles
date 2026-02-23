@@ -11,6 +11,7 @@ fn - a : open -a 'Claude'
 fn - v : open -a 'Visual Studio Code'
 fn - f : open -a 'Figma'
 fn - z : open -a 'Zen'
+fn - t : open -a 'Telegram'
 
 # --- Changing Focus ---
 # change window focus within space
