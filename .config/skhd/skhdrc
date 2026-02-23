@@ -6,7 +6,7 @@ fn - n : open -a 'Notion'
 fn - b : open -a 'Google Chrome'
 fn - i : open -a 'iTerm'
 fn - d : open -a 'TablePlus'
-fn - g : open -a 'ChatGPT'
+fn - g : open -a 'Ghostty'
 fn - a : open -a 'Claude'
 fn - v : open -a 'Visual Studio Code'
 fn - f : open -a 'Figma'
@@ -73,6 +73,11 @@ shift + alt - 4 : yabai -m window --space 4;
 shift + alt - 5 : yabai -m window --space 5;
 shift + alt - 6 : yabai -m window --space 6;
 shift + alt - 7 : yabai -m window --space 7;
+
+# Increase/Decrease window size (Example: shift + alt - a/s/w/d)
+shift + alt - a : yabai -m window --resize left:-20:0
+shift + alt - d : yabai -m window --resize right:20:0
+# (Add similar binds for top/bottom using up/down offsets)
 
 # stop/start/restart yabai
 ctrl + alt - q : brew services stop yabai
