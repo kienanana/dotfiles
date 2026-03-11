@@ -22,3 +22,6 @@ background-blur-radius = 20
 # unfocused-split-fill = #000000
 # background-opacity-cells = true
 theme = 0x96f
+
+macos-titlebar-style = hidden
+# window-decoration = none
