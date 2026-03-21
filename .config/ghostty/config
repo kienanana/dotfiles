@@ -25,3 +25,6 @@ theme = 0x96f
 
 macos-titlebar-style = hidden
 # window-decoration = none
+
+# Shaders
+custom-shader = shaders/cursor_warp.glsl
