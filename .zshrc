@@ -3,6 +3,8 @@ eval "$(starship init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	command yazi "$@" --cwd-file="$tmp"
@@ -11,4 +13,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-neofetch --ascii ~/.dotfiles/.config/neofetch/ascii/music.txt
+neofetch --ascii ~/.dotfiles/.config/neofetch/ascii/music.txt 
