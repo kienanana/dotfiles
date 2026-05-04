@@ -1,4 +1,5 @@
 alias pip='python3 -m pip'
+alias lg='lazygit'
 eval "$(starship init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
@@ -14,3 +15,10 @@ function y() {
 }
 
 neofetch --ascii ~/.dotfiles/.config/neofetch/ascii/music.txt 
+
+# bun completions
+[ -s "/Users/kienanyong/.bun/_bun" ] && source "/Users/kienanyong/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

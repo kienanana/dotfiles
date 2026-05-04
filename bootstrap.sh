@@ -36,5 +36,6 @@ link "$DOTFILES_DIR/.config/ghostty" "$HOME/.config/ghostty"
 link "$DOTFILES_DIR/.config/yabai" "$HOME/.config/yabai"
 link "$DOTFILES_DIR/.config/skhd" "$HOME/.config/skhd"
 link "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
+link "$DOTFILES_DIR/.config/lazygit" "$HOME/.config/lazygit"
 
 echo "Done."
