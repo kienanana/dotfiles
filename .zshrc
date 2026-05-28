@@ -22,3 +22,4 @@ neofetch --ascii ~/.dotfiles/.config/neofetch/ascii/music.txt
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+alias leet='python3 ~/Documents/obsidian-scripts/leet.py'
