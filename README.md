@@ -86,7 +86,20 @@ After this step, tmux will match the original environment.
 
 ------------------------------------------------------------------------
 
-## skhd reload
+## window manager (yabai + skhd)
+
+Start the services (first time / after install):
+
 ``` bash
+yabai --start-service
+skhd --start-service
+```
+
+This registers them as launchd services, so they also auto-start on login.
+
+Reload after editing configs:
+
+``` bash
+launchctl kickstart -k gui/$(id -u)/com.koekeishiya.yabai
 launchctl kickstart -k gui/$(id -u)/com.koekeishiya.skhd
 ```

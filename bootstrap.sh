@@ -67,4 +67,13 @@ fi
 echo "Installing tmux plugins..."
 TMUX_PLUGIN_MANAGER_PATH="$HOME/.tmux/plugins/" "$TPM_DIR/bin/install_plugins"
 
+# Start the window manager services now that their configs are symlinked.
+# --start-service registers them with launchd (idempotent — safe to re-run).
+for svc in yabai skhd; do
+  if command -v "$svc" >/dev/null 2>&1; then
+    echo "Starting $svc service..."
+    "$svc" --start-service || echo "WARNING: failed to start $svc (it may already be running)."
+  fi
+done
+
 echo "Done."
