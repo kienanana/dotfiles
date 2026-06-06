@@ -10,7 +10,7 @@ background-blur = true
 background-opacity = 0.92
 
 # --- Background image experiment ---
-background-image = /Users/kienanyong/Documents/backgrounds/beer.png
+background-image = /Users/kienanana/Documents/backgrounds/beer.png
 background-image-opacity = 0.15
 background-image-fit = cover
 background-image-position = center
