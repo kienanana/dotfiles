@@ -76,4 +76,13 @@ for svc in yabai skhd; do
   fi
 done
 
+# sketchybar and borders use brew services rather than --start-service. This
+# registers them with launchd so they start on login (idempotent — safe to re-run).
+for svc in sketchybar borders; do
+  if command -v "$svc" >/dev/null 2>&1; then
+    echo "Starting $svc service..."
+    brew services start "$svc" || echo "WARNING: failed to start $svc (it may already be running)."
+  fi
+done
+
 echo "Done."
