@@ -5,7 +5,7 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export PATH="$(brew --prefix)/opt/node@22/bin:$PATH"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -15,12 +15,14 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-neofetch --ascii ~/.dotfiles/.config/neofetch/ascii/music.txt 
+fastfetch
 
 # bun completions
-[ -s "/Users/kienanyong/.bun/_bun" ] && source "/Users/kienanyong/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias leet='python3 ~/Documents/obsidian-scripts/leet.py'
+
+# anthropic — API key stored in macOS Keychain, retrieved by Claude Code's apiKeyHelper (see ~/.claude/settings.json)
