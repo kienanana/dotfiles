@@ -26,3 +26,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 alias leet='python3 ~/Documents/obsidian-scripts/leet.py'
 
 # anthropic — API key stored in macOS Keychain, retrieved by Claude Code's apiKeyHelper (see ~/.claude/settings.json)
+
+# opencode
+export PATH=/Users/kienanana/.opencode/bin:$PATH
