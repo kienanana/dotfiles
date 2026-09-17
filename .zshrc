@@ -29,3 +29,4 @@ alias leet='python3 ~/Documents/obsidian-scripts/leet.py'
 
 # opencode
 export PATH=/Users/kienanana/.opencode/bin:$PATH
+alias french='python3 ~/Documents/obsidian-scripts/french.py'
